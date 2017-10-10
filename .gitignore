@@ -1,0 +1,3 @@
+.vagrant
+/vagrant-home/args.config
+/vagrant-configs/.aws/credentials
