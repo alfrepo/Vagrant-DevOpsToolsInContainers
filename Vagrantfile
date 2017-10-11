@@ -79,11 +79,9 @@ Vagrant.configure("2") do |config|
 		
 		###############
 		##### RESTORE BACKUPS		
-		aws s3 cp "s3://alf-digital-backups/data/data.tar.gz" /tmp/
-		rm -rf /data/
-		tar -xf /tmp/data.tar.gz  --directory /
-		rm -f /tmp/data.tar.gz
-		sudo chmod -R 777 /data
+				###############
+		##### RESTORE BACKUPS		
+		bash /root/vagrant-home/backup-RestoreFromS3.sh
 		
 
 
